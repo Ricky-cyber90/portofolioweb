@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+}
+
+P {
+  font-size: 1rem;
+  line-height: 1.9rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  background: white;
+  border: 1.5px solid black;
+  cursor: pointer;
+}
+
+.pre-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: rgb(25, 7, 185);
+  position: relative;
+  padding-left: 40px;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.pre-title::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+/* logo dan navbar menu*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  transition: 0.2s ease-in-out;
+  background-color: rgb(196, 157, 15);
+
+  overflow: hidden;
+}
+
+.nav a:hover {
+  background-color: #4c3abe;
+  color: rgb(232, 209, 241);
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.logo a {
+  color: black;
+}
+
+nav ul li a {
+  color: black;
+}
+
+/*Home Section*/
+#home {
+  height: 750px;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.home-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+  color: black;
+}
+
+.home-right img {
+  width: 300px;
+  border-radius: 20rem;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.home-right {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  padding-left: 3rem;
+  padding-bottom: 0.5rem;
+  background: linear-gradient(#716110 0%, #fbcb79 40%, #90945e 100%);
+}
+
+/* Skills & Experience */
+#skills {
+  padding: 2rem 0;
+  background: white;
+}
+
+.section-title-skills {
+  text-align: center;
+  margin: 1rem 0 4rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.experience {
+  display: flex;
+  gap: 2rem;
+}
+
+.experience line {
+  padding: 0 0.7rem;
+}
+
+.experience .line div {
+  width: 2px;
+  height: 100%;
+  background: black;
+  position: relative;
+}
+
+.experience-info {
+  margin: 0.3rem 0;
+}
+
+.experience-date {
+  margin-bottom: 3rem;
+}
+.experience .line div::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.5rem;
+}
+
+.skills-right {
+  line-height: 2rem;
+  padding: 0 1rem;
+}
+/* End of skills & experience */
+
+/* Galery Section */
+#galery {
+  background-color: white;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.section-title-galery {
+  text-align: center;
+  margin: 1rem 0 4rem;
+}
+
+/* Layout */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 5fr));
+  gap: 3rem;
+}
+
+.galery {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: white;
+  border-radius: 0.7rem;
+}
+
+.galery h4 {
+  color: white;
+  margin: 0.5rem 0;
+}
+
+.galery p {
+  color: gray;
+}
+
+.galery-icon {
+  background-color: gray;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1.3rem;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.galery-icon:hover {
+  top: -100;
+  scale: 0.75;
+  box-shadow: 0.15px 45px rgb(220, 215, 215);
+}
+/* End of Galery */
+
+/* Hobby section */
+#hobby {
+  background-color: white;
+  padding: 0;
+}
+
+.section-title-hobby {
+  text-align: center;
+  margin: 1rem 0 4rem;
+}
+
+/* Layout */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 5fr));
+  gap: 3rem;
+}
+
+.hobby {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: white;
+  border-radius: 0.7rem;
+}
+
+.hobby h5 {
+  color: white;
+  margin: 0.5rem 0;
+}
+
+.hobby p {
+  color: gray;
+}
+
+.hobby-icon {
+  background-color: gray;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1.3rem;
+  border-radius: 0.5rem;
+}
+/* End of Hobby */
+
+/* contact section */
+#contact {
+  padding: 4rem;
+}
+
+.contact-form div {
+  margin-bottom: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 90%;
+  padding: 0.75rem 1.3rem;
+  font-family: "Roboto", sans-serif;
+  background: white;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: black;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+.btn-submit {
+  width: 90%;
+  padding: 0.75rem 1.3rem;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+  background-color: gray;
+  color: black;
+}
+/* End of contact */
+
+/* Footer */
+footer {
+  margin-bottom: 0;
+  padding: 4rem 0;
+  background: gray;
+  text-align: center;
+  font-size: medium;
+}
+.footer-icons {
+  margin-bottom: 1rem;
+}
+
+.footer-icons a {
+  margin: 0 0.5rem;
+}
+
+.footer-icons a:hover {
+  fill: black;
+}
+
+.footer-icons {
+  fill: greenyellow;
+}
+/* End of Footer */
